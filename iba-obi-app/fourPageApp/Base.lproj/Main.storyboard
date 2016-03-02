@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Jee-f2-BpT">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--IFA OBI APP-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SuG-kA-1v9">
+                                <rect key="frame" x="11" y="82" width="299" height="468"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P6x-13-xrP">
+                                        <rect key="frame" x="25" y="308" width="250" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="V8F-MW-wwN"/>
+                                            <constraint firstAttribute="width" constant="250" id="i57-uy-rqe"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="divining">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="ujv-fw-Etj" kind="push" id="uF9-zr-4Vj"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k9s-ib-22r">
+                                        <rect key="frame" x="25" y="174" width="250" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="250" id="VOm-Su-CHg"/>
+                                            <constraint firstAttribute="height" constant="50" id="fJN-tO-exT"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="Introduction">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="WlD-oR-djA" kind="push" id="xX9-0M-Ibw"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aYO-Gu-y36">
+                                        <rect key="frame" x="24" y="242" width="250" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="250" id="Ybz-WW-zqn"/>
+                                            <constraint firstAttribute="height" constant="50" id="rAh-aJ-qjn"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="How To Cast Button">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="3Tk-Go-zt7" kind="push" id="4Dp-3s-7p9"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon" translatesAutoresizingMaskIntoConstraints="NO" id="wzw-Gv-haa">
+                                        <rect key="frame" x="88" y="23" width="123" height="116"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="116" id="Mkv-5a-2bu"/>
+                                            <constraint firstAttribute="width" constant="123" id="s4T-hs-MMs"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="wzw-Gv-haa" firstAttribute="centerX" secondItem="SuG-kA-1v9" secondAttribute="centerX" id="JJc-Zy-UwZ"/>
+                                    <constraint firstItem="P6x-13-xrP" firstAttribute="centerX" secondItem="SuG-kA-1v9" secondAttribute="centerX" id="KAS-Yu-hU4"/>
+                                    <constraint firstItem="wzw-Gv-haa" firstAttribute="top" secondItem="SuG-kA-1v9" secondAttribute="top" constant="23" id="M7I-ne-YgX"/>
+                                    <constraint firstItem="aYO-Gu-y36" firstAttribute="centerX" secondItem="SuG-kA-1v9" secondAttribute="centerX" id="Snw-xL-Zlc"/>
+                                    <constraint firstItem="k9s-ib-22r" firstAttribute="top" secondItem="wzw-Gv-haa" secondAttribute="bottom" constant="35" id="YRJ-XC-Nhj"/>
+                                    <constraint firstItem="aYO-Gu-y36" firstAttribute="top" secondItem="k9s-ib-22r" secondAttribute="bottom" constant="18" id="e1d-2X-shA"/>
+                                    <constraint firstItem="P6x-13-xrP" firstAttribute="top" secondItem="aYO-Gu-y36" secondAttribute="bottom" constant="16" id="ibG-ec-rm0"/>
+                                    <constraint firstItem="k9s-ib-22r" firstAttribute="centerX" secondItem="SuG-kA-1v9" secondAttribute="centerX" id="rxw-Vk-DpM"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="SuG-kA-1v9" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-5" id="7bG-5G-QUP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="SuG-kA-1v9" secondAttribute="trailing" constant="-6" id="BYv-v0-GW1"/>
+                            <constraint firstItem="SuG-kA-1v9" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="18" id="RBj-Gr-FjV"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="SuG-kA-1v9" secondAttribute="bottom" constant="18" id="fBI-Ue-wY6"/>
+                            <constraint firstItem="SuG-kA-1v9" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="g7m-xo-rTc"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="IFA OBI APP" id="h50-hv-Dez">
+                        <barButtonItem key="backBarButtonItem" title="Home" id="wKB-Xt-V5j"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="myView" destination="SuG-kA-1v9" id="tpD-yl-31k"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="920" y="138"/>
+        </scene>
+        <!--INTRODUCTION-->
+        <scene sceneID="lyg-9o-ADg">
+            <objects>
+                <viewController id="WlD-oR-djA" customClass="introduction" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ukg-Xa-d4l"/>
+                        <viewControllerLayoutGuide type="bottom" id="C3z-Yr-Ncr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uLU-HU-se5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="twx-Wx-eMz">
+                                <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="TopLeft" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="PtM-Dg-J9l">
+                                        <rect key="frame" x="19" y="18" width="282" height="380"/>
+                                        <color key="backgroundColor" red="0.11764705882352941" green="0.11764705882352941" blue="0.11764705882352941" alpha="1" colorSpace="calibratedRGB"/>
+                                        <string key="text">Welcome to the Ifa Obi App designed to assist new to intermediate students and disciples of Ifa when using the Obi for divination. This application will help one to quickly interpret a cast.
+
+It is best to be introduced to the Obi through an Orisa Priest or Babalao so that one has a strong foundation on the principles as well as appreciate this ancient tradition and the natural laws that it represents. The Obi is the source of many such tools and is designed to connect with ones highest good, to develop awareness and intuition.
+
+We strongly recommend that you seek further information to learn more about Ifa and the Obi and how and when to cast.
+
+The Ifa Obi App has been divided into 3 Levels,  providing one with more information to gain clarity. By selecting the buttons one is able to drill down to explore what guidance the cast presents.
+
+Recommended Reading: 
+"Awo Obi: Obi Divination in Theory and Practice" by Baba Osundiya
+
+For More Information Contact:
+Obafemifayemi Institute For the Study of Ifa
+
+Copyright © 108Monkeys 2015</string>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </textView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="PtM-Dg-J9l" firstAttribute="leading" secondItem="twx-Wx-eMz" secondAttribute="leading" constant="19" id="7nF-fu-ME5"/>
+                                    <constraint firstItem="PtM-Dg-J9l" firstAttribute="top" secondItem="twx-Wx-eMz" secondAttribute="top" constant="18" id="A7Q-PG-rAu"/>
+                                    <constraint firstAttribute="bottom" secondItem="PtM-Dg-J9l" secondAttribute="bottom" constant="18" id="K9U-pN-NrF"/>
+                                    <constraint firstItem="PtM-Dg-J9l" firstAttribute="centerY" secondItem="twx-Wx-eMz" secondAttribute="centerY" id="XOy-3b-ab3"/>
+                                    <constraint firstAttribute="trailing" secondItem="PtM-Dg-J9l" secondAttribute="trailing" constant="19" id="e41-0t-qO9"/>
+                                    <constraint firstItem="PtM-Dg-J9l" firstAttribute="centerX" secondItem="twx-Wx-eMz" secondAttribute="centerX" id="qPX-t7-0VR"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="twx-Wx-eMz" secondAttribute="trailing" id="LaT-mA-cGj"/>
+                            <constraint firstItem="twx-Wx-eMz" firstAttribute="top" secondItem="Ukg-Xa-d4l" secondAttribute="bottom" id="SXY-bs-CZd"/>
+                            <constraint firstItem="twx-Wx-eMz" firstAttribute="bottom" secondItem="C3z-Yr-Ncr" secondAttribute="top" id="UcK-Gf-uXv"/>
+                            <constraint firstItem="twx-Wx-eMz" firstAttribute="leading" secondItem="uLU-HU-se5" secondAttribute="leading" id="wXS-lC-oZC"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="INTRODUCTION" id="pWT-5W-Trj"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="myTextView" destination="PtM-Dg-J9l" id="02Z-kN-CdU"/>
+                        <outlet property="myView" destination="twx-Wx-eMz" id="6zP-1L-vRY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nXH-vm-ubD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1368" y="-522"/>
+        </scene>
+        <!--HOW TO CAST-->
+        <scene sceneID="tfT-vv-FLT">
+            <objects>
+                <viewController id="3Tk-Go-zt7" customClass="howToCast" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zZp-3D-3KP"/>
+                        <viewControllerLayoutGuide type="bottom" id="zjk-Te-c0h"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Gos-ql-5MM">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UhF-gJ-GxC">
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="TopLeft" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Veg-Nn-o5Y">
+                                        <rect key="frame" x="19" y="18" width="282" height="468"/>
+                                        <color key="backgroundColor" red="0.1176470588" green="0.1176470588" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                                        <string key="text">Casting can be done whenever you have a question to gain clarity and seeking alignment with your higher self. Before using you Obi you will need to consecrate them and dedicate them for your highest good and guidance.
+
+Once you have a question in mind shake the Obi in your hands and using your breath exhale onto them repeating three time AKIMORAN. Then toss them into a circle with a clear vertical and horizontal access. Making note of the direction that each male and female Obi is pointing will also provide you with further information.
+
+Use the Basic Divination to explain your basic Yes or No Question where you can drill down and get more details on the 5 Basic Positions.
+
+Never ask the same question more than once in 24 hours unless you are seeking clarification on the energy surrounding the cast to determine the  characteristics and anatomy of the casts.
+
+When first learning to cast it is recommended that you ask for your lesson for the day and reflect on the cast throughout your day.
+
+Soon enough you will be able to remember each cast position, characteristic and anatomy.
+
+May you benefit seeking the wisdom of the Obi.
+
+Copyright © 108Monkeys 2015</string>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="Veg-Nn-o5Y" firstAttribute="centerX" secondItem="UhF-gJ-GxC" secondAttribute="centerX" id="0UN-nP-t4M"/>
+                                    <constraint firstItem="Veg-Nn-o5Y" firstAttribute="centerY" secondItem="UhF-gJ-GxC" secondAttribute="centerY" id="KkF-2e-Mfu"/>
+                                    <constraint firstItem="Veg-Nn-o5Y" firstAttribute="top" secondItem="UhF-gJ-GxC" secondAttribute="top" constant="18" id="Uig-pR-gQ5"/>
+                                    <constraint firstItem="Veg-Nn-o5Y" firstAttribute="leading" secondItem="UhF-gJ-GxC" secondAttribute="leading" constant="19" id="hZs-ek-6s8"/>
+                                    <constraint firstAttribute="trailing" secondItem="Veg-Nn-o5Y" secondAttribute="trailing" constant="19" id="yL9-P6-FSM"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="UhF-gJ-GxC" firstAttribute="bottom" secondItem="zjk-Te-c0h" secondAttribute="top" id="GeB-eg-coi"/>
+                            <constraint firstAttribute="trailing" secondItem="UhF-gJ-GxC" secondAttribute="trailing" id="KuP-Ht-gCV"/>
+                            <constraint firstItem="UhF-gJ-GxC" firstAttribute="leading" secondItem="Gos-ql-5MM" secondAttribute="leading" id="wO4-rU-CTg"/>
+                            <constraint firstItem="UhF-gJ-GxC" firstAttribute="top" secondItem="zZp-3D-3KP" secondAttribute="bottom" id="y2K-Xh-MNH"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="HOW TO CAST" id="1A7-We-P8L"/>
+                    <connections>
+                        <outlet property="myTextView" destination="Veg-Nn-o5Y" id="nPl-Wx-ESd"/>
+                        <outlet property="myView" destination="UhF-gJ-GxC" id="GdO-06-d6d"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1ik-d7-00n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1368" y="143"/>
+        </scene>
+        <!--BASIC DIVINING-->
+        <scene sceneID="bfL-BN-3CT">
+            <objects>
+                <viewController id="ujv-fw-Etj" customClass="divine" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7Kj-XR-BHR"/>
+                        <viewControllerLayoutGuide type="bottom" id="cWL-Ua-BIY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="f1Q-LX-GrJ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="frw-5h-VeR">
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7mT-Ch-1WM">
+                                        <rect key="frame" x="20" y="60" width="100" height="100"/>
+                                        <state key="normal" title="Button" image="ALAFIA">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="alafia_action:" destination="ujv-fw-Etj" eventType="touchUpInside" id="hAu-hH-M6i"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qFd-qb-nVo">
+                                        <rect key="frame" x="198" y="60" width="100" height="100"/>
+                                        <state key="normal" title="Button" image="EJIFE">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="ejife_action:" destination="ujv-fw-Etj" eventType="touchUpInside" id="L34-20-lx4"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nd3-0G-S9x">
+                                        <rect key="frame" x="110" y="191" width="100" height="100"/>
+                                        <state key="normal" title="Button" image="ETAWA">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="etawa_action:" destination="ujv-fw-Etj" eventType="touchUpInside" id="C9U-bn-18S"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5De-PJ-MgS">
+                                        <rect key="frame" x="20" y="317" width="100" height="100"/>
+                                        <state key="normal" title="Button" image="OKANRAN">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="okanran_action:" destination="ujv-fw-Etj" eventType="touchUpInside" id="mdz-4e-GI7"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Xt-dN-qhN">
+                                        <rect key="frame" x="198" y="317" width="100" height="100"/>
+                                        <state key="normal" title="Button" image="OYEKU">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="oyeku_action:" destination="ujv-fw-Etj" eventType="touchUpInside" id="VLQ-Gw-cyp"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="BASIC DIVINING" id="Vge-O0-6gs">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="pVf-ur-tBF"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="myView" destination="frw-5h-VeR" id="H0n-nw-LGk"/>
+                        <segue destination="rdQ-dG-UV9" kind="push" identifier="detail_screeen" id="kQM-ij-T3a"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ULI-cL-eeS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="920" y="913"/>
+        </scene>
+        <!--5 Basic Postitions-->
+        <scene sceneID="bwY-dw-Zjg">
+            <objects>
+                <viewController id="rdQ-dG-UV9" customClass="divine_detail" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2Ps-Jq-bp7"/>
+                        <viewControllerLayoutGuide type="bottom" id="lGZ-hs-gCR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="J6j-oX-bYX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tdv-n0-rCY">
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="EJIFE" translatesAutoresizingMaskIntoConstraints="NO" id="tnA-cY-AVH">
+                                        <rect key="frame" x="110" y="8" width="100" height="96"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="4Rt-9B-dIT"/>
+                                            <constraint firstAttribute="height" constant="96" id="AnS-HP-OJM"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="tnA-cY-AVH" firstAttribute="leading" secondItem="Tdv-n0-rCY" secondAttribute="leading" constant="110" id="BpV-9y-rdh"/>
+                                    <constraint firstItem="tnA-cY-AVH" firstAttribute="top" secondItem="Tdv-n0-rCY" secondAttribute="top" constant="8" id="EsP-yA-UH7"/>
+                                    <constraint firstAttribute="trailing" secondItem="tnA-cY-AVH" secondAttribute="trailing" constant="110" id="avO-FH-rPu"/>
+                                </constraints>
+                            </view>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="TopLeft" misplaced="YES" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="gD8-ZO-vAj">
+                                <rect key="frame" x="15" y="175" width="290" height="375"/>
+                                <color key="backgroundColor" red="0.1176470588" green="0.1176470588" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="lGZ-hs-gCR" firstAttribute="top" secondItem="gD8-ZO-vAj" secondAttribute="bottom" constant="18" id="4qX-ac-Nlz"/>
+                            <constraint firstItem="Tdv-n0-rCY" firstAttribute="bottom" secondItem="lGZ-hs-gCR" secondAttribute="top" id="Iik-zr-TAs"/>
+                            <constraint firstItem="gD8-ZO-vAj" firstAttribute="leading" secondItem="J6j-oX-bYX" secondAttribute="leadingMargin" constant="-5" id="Yry-aS-Ii8"/>
+                            <constraint firstItem="gD8-ZO-vAj" firstAttribute="top" secondItem="2Ps-Jq-bp7" secondAttribute="bottom" constant="111" id="eTV-aj-kbx"/>
+                            <constraint firstItem="Tdv-n0-rCY" firstAttribute="leading" secondItem="J6j-oX-bYX" secondAttribute="leading" id="fVx-sB-qnq"/>
+                            <constraint firstItem="Tdv-n0-rCY" firstAttribute="top" secondItem="2Ps-Jq-bp7" secondAttribute="bottom" id="fp4-9b-bIf"/>
+                            <constraint firstItem="gD8-ZO-vAj" firstAttribute="centerX" secondItem="Tdv-n0-rCY" secondAttribute="centerX" id="oy2-SF-ddA"/>
+                            <constraint firstItem="gD8-ZO-vAj" firstAttribute="centerX" secondItem="J6j-oX-bYX" secondAttribute="centerX" id="sgA-6h-52c"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gD8-ZO-vAj" secondAttribute="trailing" constant="-5" id="yhw-u3-r4o"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="5 Basic Postitions" id="SG6-wJ-1mG"/>
+                    <connections>
+                        <outlet property="myImageView" destination="tnA-cY-AVH" id="trx-vu-NXR"/>
+                        <outlet property="myTextView" destination="gD8-ZO-vAj" id="wDf-Fi-mgz"/>
+                        <outlet property="myView" destination="Tdv-n0-rCY" id="JBf-rR-WTc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ht9-9j-q8c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1368" y="922"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="9Jh-JU-dU0">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Jee-f2-BpT" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cxy-aW-stj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.46274509803921571" green="0.011764705882352941" blue="0.011764705882352941" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="PPH-2F-lPw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yac-mT-hOU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="482" y="138"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ALAFIA" width="320" height="320"/>
+        <image name="EJIFE" width="320" height="320"/>
+        <image name="ETAWA" width="320" height="320"/>
+        <image name="How To Cast Button" width="770" height="120"/>
+        <image name="Introduction" width="770" height="120"/>
+        <image name="OKANRAN" width="320" height="320"/>
+        <image name="OYEKU" width="320" height="320"/>
+        <image name="divining" width="770" height="120"/>
+        <image name="icon" width="60" height="60"/>
+    </resources>
+</document>
